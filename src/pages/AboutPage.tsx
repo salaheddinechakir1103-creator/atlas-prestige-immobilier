@@ -1,3 +1,4 @@
+import fixedImage0 from '../assets/images/hero_moroccan_villa_1792754388660.jpg';
 import React from 'react';
 import { useProperties } from '../context/PropertyContext';
 import { Award, Compass, HeartHandshake, ShieldCheck, ArrowUpRight } from 'lucide-react';
