@@ -1,0 +1,6 @@
+{
+  "name": "Atlas Prestige Immobilier",
+  "description": "L'excellence immobilière au Maroc. Villas d'exception, riads contemporains et penthouses avec vue panoramique.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
