@@ -1,3 +1,8 @@
+import propertyImage1 from '../assets/images/hero_moroccan_villa_1792754388660.jpg';
+import propertyImage2 from '../assets/images/luxury_moroccan_interior_1792754390197.jpg';
+import propertyImage3 from '../assets/images/villa_marrakech_estate_1792754389244.jpg';
+import propertyImage4 from '../assets/images/casablanca_penthouse_1792754390171.jpg';
+import propertyImage5 from '../assets/images/villa_tangier_coast_1792754390808.jpg';
 import { Property, VisitRequest } from '../types/property';
 
 // Curated collection of 18 premier luxury estates in Morocco
@@ -19,11 +24,11 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2024,
     status: 'disponible',
     featured: true,
-    heroImage: '/src/assets/images/hero_moroccan_villa_1792754388660.jpg',
+    heroImage: propertyImage1,
     gallery: [
-      '/src/assets/images/hero_moroccan_villa_1792754388660.jpg',
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg',
-      '/src/assets/images/villa_marrakech_estate_1792754389244.jpg'
+      propertyImage1,
+      propertyImage2,
+      propertyImage3
     ],
     description: 'Chef-d\'œuvre d\'architecture contemporaine intégrant la pierre de Taza taillée à la main, le pisé stabilisé et de spectaculaires baies vitrées de 5 mètres de hauteur. L\'eau guide chaque transition spatiale depuis le patio d\'honneur jusqu\'au miroir d\'eau chauffé de 25 mètres face aux crêtes enneigées du Haut Atlas.',
     features: [
@@ -70,11 +75,11 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2023,
     status: 'disponible',
     featured: true,
-    heroImage: '/src/assets/images/villa_marrakech_estate_1792754389244.jpg',
+    heroImage: propertyImage3,
     gallery: [
-      '/src/assets/images/villa_marrakech_estate_1792754389244.jpg',
-      '/src/assets/images/hero_moroccan_villa_1792754388660.jpg',
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg'
+      propertyImage3,
+      propertyImage1,
+      propertyImage2
     ],
     description: 'Une propriété d\'exception étendue sur un parc de 2,4 hectares bordé de 300 oliviers et palmiers matures. Conçue avec une approche durable en pisé moderne, la villa maintient une fraîcheur naturelle remarquable tout au long de l\'été marocain.',
     features: [
@@ -119,11 +124,11 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2025,
     status: 'disponible',
     featured: true,
-    heroImage: '/src/assets/images/casablanca_penthouse_1792754390171.jpg',
+    heroImage: propertyImage4,
     gallery: [
-      '/src/assets/images/casablanca_penthouse_1792754390171.jpg',
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg',
-      '/src/assets/images/hero_moroccan_villa_1792754388660.jpg'
+      propertyImage4,
+      propertyImage2,
+      propertyImage1
     ],
     description: 'Au sommet de la colline d\'Anfa, ce penthouse triplex offre une vue à 360° sur l\'Atlantique, la Grande Mosquée Hassan II et les lumières de la métropole économique. Terrasse de réception avec piscine privée à débordement suspendue dans le ciel.',
     features: [
@@ -169,11 +174,11 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2024,
     status: 'disponible',
     featured: true,
-    heroImage: '/src/assets/images/villa_tangier_coast_1792754390808.jpg',
+    heroImage: propertyImage5,
     gallery: [
-      '/src/assets/images/villa_tangier_coast_1792754390808.jpg',
-      '/src/assets/images/casablanca_penthouse_1792754390171.jpg',
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg'
+      propertyImage5,
+      propertyImage4,
+      propertyImage2
     ],
     description: 'Bâtie sur la falaise légendaire de la Vieille Montagne, cette résidence contemporaine domine la rencontre des eaux de la Méditerranée et de l\'Océan Atlantique. Terrasses en gradins, pins maritimes cinquantenaires et lumière d\'or propre au Détroit.',
     features: [
@@ -219,10 +224,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2023,
     status: 'disponible',
     featured: false,
-    heroImage: '/src/assets/images/hero_moroccan_villa_1792754388660.jpg',
+    heroImage: propertyImage1,
     gallery: [
-      '/src/assets/images/hero_moroccan_villa_1792754388660.jpg',
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg'
+      propertyImage1,
+      propertyImage2
     ],
     description: 'Une réinterprétation avant-gardiste de la kasbah marocaine. Volumes géométriques purs, jeux d\'ombre et de claustras géométriques en terracotta, couloir de nage de 18 mètres et accès direct aux greens.',
     features: [
@@ -258,10 +263,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2024,
     status: 'disponible',
     featured: false,
-    heroImage: '/src/assets/images/villa_marrakech_estate_1792754389244.jpg',
+    heroImage: propertyImage3,
     gallery: [
-      '/src/assets/images/villa_marrakech_estate_1792754389244.jpg',
-      '/src/assets/images/hero_moroccan_villa_1792754388660.jpg'
+      propertyImage3,
+      propertyImage1
     ],
     description: 'Conçue comme une ode aux minéraux de l\'Atlas, cette villa d\'un hectare fusionne béton brut teinté dans la masse et jardins désertiques de cactées et d\'oliviers.',
     features: [
@@ -296,10 +301,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2022,
     status: 'disponible',
     featured: false,
-    heroImage: '/src/assets/images/casablanca_penthouse_1792754390171.jpg',
+    heroImage: propertyImage4,
     gallery: [
-      '/src/assets/images/casablanca_penthouse_1792754390171.jpg',
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg'
+      propertyImage4,
+      propertyImage2
     ],
     description: 'Rare demeure de maître d\'inspiration moderniste casablancaise, préservant ses ferronneries d\'époque, réhaussée d\'un patio contemporain et d\'un bassin de nage discret.',
     features: [
@@ -333,10 +338,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2023,
     status: 'disponible',
     featured: true,
-    heroImage: '/src/assets/images/villa_marrakech_estate_1792754389244.jpg',
+    heroImage: propertyImage3,
     gallery: [
-      '/src/assets/images/villa_marrakech_estate_1792754389244.jpg',
-      '/src/assets/images/hero_moroccan_villa_1792754388660.jpg'
+      propertyImage3,
+      propertyImage1
     ],
     description: 'Implantée au cœur de Bir Kacem, cette demeure prestigieuse répond aux plus hauts standards de sécurité diplomatique et de réception officielle. Parc arboré séculaire.',
     features: [
@@ -371,10 +376,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2024,
     status: 'disponible',
     featured: false,
-    heroImage: '/src/assets/images/villa_tangier_coast_1792754390808.jpg',
+    heroImage: propertyImage5,
     gallery: [
-      '/src/assets/images/villa_tangier_coast_1792754390808.jpg',
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg'
+      propertyImage5,
+      propertyImage2
     ],
     description: 'Bâtie en pierre calcaire de Manzel et bois d\'eucalyptus, cette villa protégée des vents dominants s\'ouvre sur le golf Gary Player et la forêt d\'arganiers.',
     features: [
@@ -409,10 +414,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2025,
     status: 'disponible',
     featured: false,
-    heroImage: '/src/assets/images/villa_tangier_coast_1792754390808.jpg',
+    heroImage: propertyImage5,
     gallery: [
-      '/src/assets/images/villa_tangier_coast_1792754390808.jpg',
-      '/src/assets/images/casablanca_penthouse_1792754390171.jpg'
+      propertyImage5,
+      propertyImage4
     ],
     description: 'Un point de vue incomparable sur les couchers de soleil atlantiques. Salons entièrement ouverts sur l\'océan avec accès direct aux promenades marines et aux spots de surf.',
     features: [
@@ -445,10 +450,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2023,
     status: 'disponible',
     featured: false,
-    heroImage: '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg',
+    heroImage: propertyImage2,
     gallery: [
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg',
-      '/src/assets/images/hero_moroccan_villa_1792754388660.jpg'
+      propertyImage2,
+      propertyImage1
     ],
     description: 'Ce riad du XVIIIe siècle entièrement réinventé conjugue le savoir-faire des Maâlems plâtriers avec des volumes épurés, un ascenseur intérieur en verre et un bassin de nage en marbre noir.',
     features: [
@@ -483,10 +488,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2024,
     status: 'disponible',
     featured: false,
-    heroImage: '/src/assets/images/hero_moroccan_villa_1792754388660.jpg',
+    heroImage: propertyImage1,
     gallery: [
-      '/src/assets/images/hero_moroccan_villa_1792754388660.jpg',
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg'
+      propertyImage1,
+      propertyImage2
     ],
     description: 'Villa aux volumes horizontaux affirmés, entourée d\'un miroir d\'eau et d\'un jardin xérophyte composé d\'agaves et d\'oliviers taillés en nuage.',
     features: [
@@ -523,11 +528,11 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2024,
     status: 'disponible',
     featured: true,
-    heroImage: '/src/assets/images/hero_moroccan_villa_1792754388660.jpg',
+    heroImage: propertyImage1,
     gallery: [
-      '/src/assets/images/hero_moroccan_villa_1792754388660.jpg',
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg',
-      '/src/assets/images/villa_marrakech_estate_1792754389244.jpg'
+      propertyImage1,
+      propertyImage2,
+      propertyImage3
     ],
     description: 'Location exclusive incluant chef cuisinier privé, majordome, hammam traditionnel chauffé tous les jours et chauffeur VIP. Piscine de 25m et jardins de palmiers.',
     features: [
@@ -564,10 +569,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2024,
     status: 'disponible',
     featured: true,
-    heroImage: '/src/assets/images/casablanca_penthouse_1792754390171.jpg',
+    heroImage: propertyImage4,
     gallery: [
-      '/src/assets/images/casablanca_penthouse_1792754390171.jpg',
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg'
+      propertyImage4,
+      propertyImage2
     ],
     description: 'Penthouse d\'exécutif de très grand luxe, mobilier Poliform et B&B Italia, terrasse panoramique de 150 m² sur l\'Océan Atlantique, service de conciergerie 24/7.',
     features: [
@@ -602,10 +607,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2023,
     status: 'disponible',
     featured: false,
-    heroImage: '/src/assets/images/villa_tangier_coast_1792754390808.jpg',
+    heroImage: propertyImage5,
     gallery: [
-      '/src/assets/images/villa_tangier_coast_1792754390808.jpg',
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg'
+      propertyImage5,
+      propertyImage2
     ],
     description: 'Propriété secrète lovée dans les pins parasols de Tanger, offrant une vue dégagée sur les phares maritimes et le ballet des navires transatlantiques.',
     features: [
@@ -640,10 +645,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2023,
     status: 'disponible',
     featured: false,
-    heroImage: '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg',
+    heroImage: propertyImage2,
     gallery: [
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg',
-      '/src/assets/images/hero_moroccan_villa_1792754388660.jpg'
+      propertyImage2,
+      propertyImage1
     ],
     description: 'Située dans le quartier le plus élégant de Marrakech, cette villa allie calme absolu, jardin tropical luxuriant et proximité immédiate des palaces de l\'Hivernage.',
     features: [
@@ -677,10 +682,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2022,
     status: 'disponible',
     featured: false,
-    heroImage: '/src/assets/images/villa_marrakech_estate_1792754389244.jpg',
+    heroImage: propertyImage3,
     gallery: [
-      '/src/assets/images/villa_marrakech_estate_1792754389244.jpg',
-      '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg'
+      propertyImage3,
+      propertyImage2
     ],
     description: 'Propriété de très haut standing dans le secteur résidentiel le plus recherché de la capitale du Royaume. Grands salons de protocole, parc boisé et piscine privée.',
     features: [
@@ -715,10 +720,10 @@ export const INITIAL_PROPERTIES: Property[] = [
     yearBuilt: 2024,
     status: 'disponible',
     featured: false,
-    heroImage: '/src/assets/images/villa_tangier_coast_1792754390808.jpg',
+    heroImage: propertyImage5,
     gallery: [
-      '/src/assets/images/villa_tangier_coast_1792754390808.jpg',
-      '/src/assets/images/casablanca_penthouse_1792754390171.jpg'
+      propertyImage5,
+      propertyImage4
     ],
     description: 'Une parenthèse luxueuse sur l\'une des plus belles baies du Maroc. Piscine à débordement face à la houle, service de plage et majordome privé.',
     features: [
