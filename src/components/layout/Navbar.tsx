@@ -26,17 +26,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenFavorites }) => {
 
   return (
     <header className="sticky top-0 z-40 bg-[#0c0d0e]/95 border-b border-white/10 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4 xl:gap-8">
         {/* Zone 1: Brand Wordmark (Single text element in display face) */}
         <button
           onClick={() => handleNavClick('home')}
-          className="text-2xl lg:text-3xl font-serif tracking-[0.18em] uppercase text-white hover:text-[#c5a880] transition-colors whitespace-nowrap shrink-0 text-left"
+          className="text-lg sm:text-2xl xl:text-3xl font-serif tracking-[0.10em] sm:tracking-[0.18em] uppercase text-white hover:text-[#c5a880] transition-colors whitespace-nowrap shrink-0 text-left"
         >
           Atlas Prestige
         </button>
 
         {/* Zone 2: Clean single-line text links */}
-        <nav className="hidden md:flex items-center gap-8 text-xs uppercase tracking-[0.2em] font-medium text-white/70">
+        <nav className="hidden xl:flex items-center gap-5 2xl:gap-8 text-xs uppercase tracking-[0.2em] font-medium text-white/70">
           {navLinks.map((link) => {
             const isActive = currentRoute === link.route;
             return (
@@ -90,7 +90,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenFavorites }) => {
           {/* Primary Action Button */}
           <button
             onClick={() => handleNavClick('contact')}
-            className="hidden sm:inline-flex items-center gap-1.5 px-5 py-2.5 text-xs uppercase tracking-[0.16em] font-medium bg-[#c5a880] text-black hover:bg-[#d6bc95] transition-colors whitespace-nowrap shrink-0 rounded-sm"
+            className="hidden lg:inline-flex items-center gap-1.5 px-5 py-2.5 text-xs uppercase tracking-[0.16em] font-medium bg-[#c5a880] text-black hover:bg-[#d6bc95] transition-colors whitespace-nowrap shrink-0 rounded-sm"
           >
             <span>Visite Privée</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -99,7 +99,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenFavorites }) => {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-white hover:text-[#c5a880]"
+            className="xl:hidden p-2 text-white hover:text-[#c5a880]"
             aria-label="Menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -109,7 +109,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenFavorites }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#0e1013] border-b border-white/10 px-6 py-6 animate-in slide-in-from-top-4 duration-200">
+        <div className="xl:hidden bg-[#0e1013] border-b border-white/10 px-6 py-6 animate-in slide-in-from-top-4 duration-200">
           <nav className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <button
