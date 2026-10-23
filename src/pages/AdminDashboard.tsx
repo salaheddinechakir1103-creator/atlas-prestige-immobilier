@@ -1,3 +1,5 @@
+import fixedImage0 from '../assets/images/hero_moroccan_villa_1792754388660.jpg';
+import fixedImage1 from '../assets/images/luxury_moroccan_interior_1792754390197.jpg';
 import React, { useState } from 'react';
 import { useProperties } from '../context/PropertyContext';
 import { Property, VisitRequest, PropertyCity, PropertyType, PropertyCategory, PropertyStatus } from '../types/property';
@@ -163,10 +165,10 @@ export const AdminDashboard: React.FC = () => {
         yearBuilt: 2025,
         status: formStatus,
         featured: false,
-        heroImage: '/src/assets/images/hero_moroccan_villa_1792754388660.jpg',
+        heroImage: fixedImage0,
         gallery: [
-          '/src/assets/images/hero_moroccan_villa_1792754388660.jpg',
-          '/src/assets/images/luxury_moroccan_interior_1792754390197.jpg'
+          fixedImage0,
+          fixedImage1
         ],
         description: formDescription,
         features: [
