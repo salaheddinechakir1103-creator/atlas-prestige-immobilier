@@ -46,3 +46,40 @@ img, video, canvas { max-width: 100%; }
   button, a { touch-action: manipulation; }
   .max-w-7xl, .max-w-6xl, .max-w-5xl { min-width: 0; }
 }
+
+/* ATLAS PRESTIGE — compact cinematic mobile preview, desktop unchanged */
+@media (max-width: 639px) {
+  /* Keep the architectural hero tall and the editorial copy compact. */
+  main > section:first-child { height: 78svh; min-height: 610px; max-height: 860px; }
+  main > section:first-child > div.absolute.top-6 { top: 12px; right: 10px; gap: 4px; }
+  main > section:first-child > div.absolute.top-6 button { font-size: 9px; padding: 5px 7px; gap: 4px; }
+  main > section:first-child > div.absolute.top-6 svg { width: 12px; height: 12px; }
+  main > section:first-child > div.absolute.top-12 { top: 48px; left: 18px; right: 18px; }
+  main > section:first-child h1 { font-size: clamp(28px, 8vw, 38px); line-height: 1; overflow-wrap: normal; }
+  main > section:first-child h1 + p { font-size: 10px; line-height: 1.55; max-width: 360px; }
+  main > section:first-child .pointer-events-auto button { font-size: 9px; padding: 9px 12px; letter-spacing: .07em; }
+  main > section:first-child .pointer-events-auto { gap: 8px; }
+  main > section:first-child > div.absolute.bottom-6 { bottom: 10px; left: 10px; right: 10px; }
+  main > section:first-child > div.absolute.bottom-6 > div { padding: 8px; }
+  main > section:first-child > div.absolute.bottom-6 h4 { font-size: 10px; }
+  main > section:first-child > div.absolute.bottom-6 .flex.flex-wrap { flex-wrap: nowrap; gap: 5px; }
+  main > section:first-child > div.absolute.bottom-6 .flex.items-center.gap-1\\.5 { gap: 2px; }
+  main > section:first-child > div.absolute.bottom-6 button { font-size: 8px; padding: 4px; }
+  /* Keep two property cards side by side, matching the supplied preview. */
+  #collection-signature { padding-top: 40px; padding-bottom: 48px; }
+  #collection-signature > div { padding-left: 12px; padding-right: 12px; }
+  #collection-signature > div > div:first-child { gap: 12px; margin-bottom: 22px; }
+  #collection-signature h2 { font-size: 24px; line-height: 1.05; }
+  #collection-signature .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  #collection-signature article .p-5 { padding: 9px; gap: 8px; }
+  #collection-signature article h3 { font-size: 14px; }
+  #collection-signature article p { font-size: 9px; }
+  #collection-signature article .text-xl { font-size: 14px; }
+  #collection-signature article .absolute.top-3\\.5 { top: 7px; }
+  #collection-signature article .absolute.left-4 { left: 7px; }
+  #collection-signature article .absolute.right-4 { right: 7px; }
+  #collection-signature article .tracking-wider { letter-spacing: 0; font-size: 8px; }
+  #collection-signature article .border-t { font-size: 8px; gap: 3px; flex-wrap: wrap; }
+  #collection-signature article .border-t > div { gap: 3px; flex-wrap: wrap; }
+  #collection-signature article .border-t > div:last-child { display: none; }
+}
