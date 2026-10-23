@@ -33,3 +33,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #c5a880;
 }
+
+/* Responsive luxury layout: keep the desktop art direction without shrinking it. */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+#root { min-width: 0; width: 100%; }
+img, video, canvas { max-width: 100%; }
+@media (max-width: 639px) {
+  body { width: 100%; overflow-x: clip; }
+  h1 { font-size: clamp(2.65rem, 11vw, 4.5rem); line-height: 1.06; overflow-wrap: anywhere; }
+  h2 { overflow-wrap: anywhere; }
+  input, select, textarea { font-size: 16px; max-width: 100%; }
+  button, a { touch-action: manipulation; }
+  .max-w-7xl, .max-w-6xl, .max-w-5xl { min-width: 0; }
+}
