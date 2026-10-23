@@ -43,7 +43,7 @@ export const AboutPage: React.FC = () => {
         {/* Hero Visual Card */}
         <div className="relative aspect-[21/9] rounded-sm overflow-hidden border border-white/10 mb-16 bg-[#121418]">
           <img
-            src="/src/assets/images/hero_moroccan_villa_1792754388660.jpg"
+            src={fixedImage0}
             alt="Maison Atlas Prestige"
             className="w-full h-full object-cover"
           />
