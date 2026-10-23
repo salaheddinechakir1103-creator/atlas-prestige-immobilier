@@ -1,3 +1,4 @@
+import fixedImage0 from '../../assets/images/hero_moroccan_villa_1792754388660.jpg';
 import React, { useRef, useState, useEffect } from 'react';
 import { useProperties } from '../../context/PropertyContext';
 import { LuxuryVillaCanvas } from '../3d/LuxuryVillaCanvas';
