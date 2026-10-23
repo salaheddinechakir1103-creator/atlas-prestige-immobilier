@@ -148,7 +148,7 @@ export const CinematicVideoHero: React.FC = () => {
           <video
             ref={videoRef}
             src="/videos/hero.mp4"
-            poster="/src/assets/images/hero_moroccan_villa_1792754388660.jpg"
+            poster={fixedImage0}
             autoPlay
             loop
             muted={isMuted}
