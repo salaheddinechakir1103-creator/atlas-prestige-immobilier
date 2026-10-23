@@ -73,7 +73,20 @@ export const PropertyProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [properties, setProperties] = useState<Property[]>(() => {
     try {
       const saved = localStorage.getItem('atlas_prestige_properties');
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const stored = JSON.parse(saved) as Property[];
+        // Refresh legacy Vite source image URLs already persisted in browsers.
+        return stored.map((property) => {
+          const original = INITIAL_PROPERTIES.find((item) => item.id === property.id);
+          if (!original) return property;
+          const imageIsLegacy = (value: string) => value.startsWith('/src/assets/images/');
+          return {
+            ...property,
+            heroImage: imageIsLegacy(property.heroImage) ? original.heroImage : property.heroImage,
+            gallery: property.gallery?.map((image, index) => imageIsLegacy(image) ? (original.gallery[index] ?? original.heroImage) : image) ?? original.gallery
+          };
+        });
+      }
     } catch {
       // fallback
     }
