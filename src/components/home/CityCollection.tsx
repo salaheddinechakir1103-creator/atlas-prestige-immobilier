@@ -1,3 +1,7 @@
+import cityImage1 from '../../assets/images/hero_moroccan_villa_1792754388660.jpg';
+import cityImage2 from '../../assets/images/casablanca_penthouse_1792754390171.jpg';
+import cityImage3 from '../../assets/images/villa_tangier_coast_1792754390808.jpg';
+import cityImage4 from '../../assets/images/villa_marrakech_estate_1792754389244.jpg';
 import React from 'react';
 import { useProperties } from '../../context/PropertyContext';
 import { PropertyCity } from '../../types/property';
@@ -19,28 +23,28 @@ export const CityCollection: React.FC = () => {
       city: 'Marrakech',
       title: 'Marrakech & La Palmeraie',
       districts: 'Palmeraie · Amelkis · Route de l\'Ourika',
-      image: '/src/assets/images/hero_moroccan_villa_1792754388660.jpg',
+      image: cityImage1,
       description: 'L\'oasis légendaire face aux neiges de l\'Atlas. Domaines séculaires d\'oliviers et kasbahs contemporaines.'
     },
     {
       city: 'Casablanca',
       title: 'Casablanca Anfa & Littoral',
       districts: 'Anfa Supérieur · Ain Diab · Gauthier',
-      image: '/src/assets/images/casablanca_penthouse_1792754390171.jpg',
+      image: cityImage2,
       description: 'L\'énergie cosmopolite atlantique. Penthouses suspendus, modernisme architectural et vues imprenables.'
     },
     {
       city: 'Tanger',
       title: 'Tanger & Le Cap Spartel',
       districts: 'Vieille Montagne · Cap Spartel · Marshan',
-      image: '/src/assets/images/villa_tangier_coast_1792754390808.jpg',
+      image: cityImage3,
       description: 'Le carrefour mythique entre Méditerranée et Atlantique. Falaises boisées de pins et villas belvédère.'
     },
     {
       city: 'Rabat',
       title: 'Rabat Souissi Diplomatique',
       districts: 'Souissi · Bir Kacem · Ambassadeurs',
-      image: '/src/assets/images/villa_marrakech_estate_1792754389244.jpg',
+      image: cityImage4,
       description: 'La quiétude majestueuse de la capitale du Royaume. Propriétés diplomatiques ceintes de parcs boisés.'
     }
   ];
